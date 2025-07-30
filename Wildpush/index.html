@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wildvoice | Protecting Endangered Species</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" data-page="home">
+                <i class="fas fa-paw"></i>
+                Wildvoice
+            </a>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="species" class="nav-link">Species</a></li>
+                <li><a href="#" data-page="conservation" class="nav-link">Conservation</a></li>
+                <li><a href="#" data-page="videos" class="nav-link">Videos</a></li>
+                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Protecting Our Planet's Most Vulnerable Creatures</h1>
+                <p>Join us in the fight to preserve endangered wildlife and their habitats for future generations. Together, we can make a difference.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn" data-page="species">Explore Species</a>
+                    <a href="#" class="btn btn-secondary" data-page="conservation">Support Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-title">
+                <h2>Wildlife Crisis</h2>
+                <p>The alarming state of our planet's biodiversity</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <i class=""><img src="10_species_in_2010.jpg" alt="" width="80%"></i>
+                    <h3>42,100</h3>
+                    <p>Species Threatened</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class=""><img src="land.jpg" alt="" width="100%"></i>
+                    <h3>75%</h3>
+                    <p>Earth's Land Degraded</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class=""><img src="extinction-banner.avif" alt="" width="90%"></i>
+                    <h3>100x</h3>
+                    <p>Faster Extinction Rate</p>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Critical Habitats</h2>
+                <p>Protecting biodiversity hotspots around the world</p>
+            </div>
+            
+            <div class="species-grid">
+                <div class="species-card" style="border-top: 5px solid var(--forest);">
+                    <div class="species-img" style="background-image: url('friendship_1280p.jpg');"></div>
+                    <div class="species-info">
+                        <h3>Amazon Rainforest</h3>
+                        <p>Home to 10% of the world's known species, facing deforestation at alarming rates.</p>
+                        <a href="https://youtu.be/s7DbVTkaXn0" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="species-card" style="border-top: 5px solid var(--savannah);">
+                    <div class="species-img" style="background-image: url('africa-botswana-springbok-antidorcas-marsupialis-FOF00725.jpg');"></div>
+                    <div class="species-info">
+                        <h3>African Savanna</h3>
+                        <p>Supports the world's greatest diversity of grazing mammals and predators.</p>
+                        <a href="https://youtu.be/2KkGev-JVIo" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="species-card" style="border-top: 5px solid var(--arctic);">
+                    <div class="species-img" style="background-image: url('emperor-penguins-tundra-arctic-1.jpg');"></div>
+                    <div class="species-info">
+                        <h3>Arctic Tundra</h3>
+                        <p>Critical habitat for polar species threatened by climate change.</p>
+                        <a href="https://youtu.be/RT6x5GVPFG8" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="species" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Endangered Species</h2>
+                <p>Meet some of Earth's most threatened inhabitants</p>
+            </div>
+            
+            <div class="habitat-filter">
+                <button class="habitat-btn active" data-habitat="all">All</button>
+                <button class="habitat-btn" data-habitat="forest">Forest</button>
+                <button class="habitat-btn" data-habitat="savannah">Savannah</button>
+                <button class="habitat-btn" data-habitat="ocean">Ocean</button>
+                <button class="habitat-btn" data-habitat="arctic">Arctic</button>
+            </div>
+            
+            <div class="species-grid">
+
+                <div class="species-card" data-habitat="forest" >
+                    <div class="species-img"    style="background-image: url('hero.webp')  ;"></div>
+                    <div class="status">Critically Endangered</div>
+                    <div class="species-info">
+                        <h3>Amur Leopard</h3>
+                        <p>With fewer than 100 individuals left in the wild, the Amur leopard is one of the world's most endangered big cats.</p>
+                        <a href="https://youtu.be/zOVmH7q9ZP4" class="btn">Learn More</a>
+                    </div>
+                </div>  
+                
+                <div class="species-card" data-habitat="forest">
+                    <div class="species-img" style="background-image: url('tiger.jpg');"></div>
+                    <div class="status">Endangered</div>
+                    <div class="species-info">
+                        <h3>Sumatran Tiger</h3>
+                        <p>Fewer than 400 Sumatran tigers remain in the wild, threatened by poaching and habitat destruction.</p>
+                        <a href="https://youtu.be/0_7dTrhBXfs" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="species-card" data-habitat="forest">
+                    <div class="species-img" style="background-image: url('gorilla.jpg');"></div>
+                    <div class="status">Critically Endangered</div>
+                    <div class="species-info">
+                        <h3>Mountain Gorilla</h3>
+                        <p>Only about 1,000 mountain gorillas remain in the wild, living in protected parks in Central Africa.</p>
+                        <a href="https://youtu.be/rHhSCO5-3Pg" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                
+                <div class="species-card" data-habitat="savannah">
+                    <div class="species-img" style="background-image: url('fe.jpg');"></div>
+                    <div class="status">Vulnerable</div>
+                    <div class="species-info">
+                        <h3>African Elephant</h3>
+                        <p>Poaching for ivory has reduced elephant populations by 30% in the last decade.</p>
+                        <a href="https://youtu.be/Aw6GkiCvcWs" class="btn">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+                
+                
+                    <div class="species-card" data-habitat="ocean">
+                        <div class="species-img" style="background-image: url('beak.jpg');"></div>
+                        <div class="status">Critically Endangered</div>
+                        <div class="species-info">
+                            <h3>Hawksbill Turtle</h3>
+                            <p>These sea turtles are critically endangered due to poaching for their beautiful shells.</p>
+                            <a href="https://youtu.be/wrH6zVbXH3Q" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                
+                    <div class="species-card" data-habitat="ocean">
+                    <div class="species-img" style="background-image: url('blue_Whale.jpg');"></div>
+                    <div class="status">Endangered</div>
+                    <div class="species-info">
+                        <h3>Blue Whale</h3>
+                        <p>The largest animal on Earth, threatened by ship strikes and ocean noise pollution.</p>
+                        <a href="https://youtu.be/bgiPTUy2RqI" class="btn">Learn More</a>
+                    </div>
+                </div> 
+                
+                
+                <div class="species-card" data-habitat="arctic">
+                    <div class="species-img" style="background-image: url('Polar-Meltdown-image-Copyright-Arne-Naevra-Naturbilderno.png');"></div>
+                    <div class="status">Vulnerable</div>
+                    <div class="species-info">
+                        <h3>Polar Bear</h3>
+                        <p>Sea ice loss due to climate change threatens the survival of polar bears.</p>
+                        <a href="https://youtu.be/rqh5pxVUChw" class="btn">Learn More</a>
+                    </div>
+                </div>
+                </div> 
+        </div>
+    </section>
+
+    
+    <section id="conservation" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conservation Efforts</h2>
+                <p>How we're making a difference for endangered species</p>
+            </div>
+            
+            <div class="conservation-cards">
+                <div class="conservation-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Habitat Protection</h3>
+                    <p>We work to establish and expand protected areas, creating safe havens for endangered species to thrive.</p>
+                    <a href="https://www.worldwildlife.org/pages/looking-back-10-conservation-wins-from-the-last-10-years " class="btn">Learn More</a>
+                </div>
+                
+                <div class="conservation-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Engagement</h3>
+                    <p>We partner with local communities to develop sustainable livelihoods that benefit both people and wildlife.</p>
+                    <a href="https://www.africanpeoplewildlife.org/our-work/programs/active-community-engagement" class="btn">Learn More</a>
+                </div>
+                
+                <div class="conservation-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Scientific Research</h3>
+                    <p>Our research programs provide critical data to inform conservation strategies and policy decisions.</p>
+                    <a href="https://www.wcs.org/our-work/solutions/conservation-science" class="btn">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Our Timeline</h2>
+                <p>Key milestones in wildlife conservation</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2005: Establishment</h3>
+                        <p>Wildvoice was founded with a mission to protect endangered species through direct action and education.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2010: Amazon Initiative</h3>
+                        <p>Launched our first major conservation project in the Amazon rainforest, protecting over 100,000 acres.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2015: Anti-Poaching Task Force</h3>
+                        <p>Created specialized teams to combat poaching in African wildlife reserves.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2020: Coral Restoration</h3>
+                        <p>Began marine conservation efforts with coral reef restoration projects in the Pacific.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023: Global Expansion</h3>
+                        <p>Expanded operations to 15 countries with over 50 active conservation projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="videos" class="page video-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Wildlife Videos</h2>
+                <p>Experience the beauty and challenges of endangered species</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('wild\ e.avif');"></div>
+                    <div class="video-info">
+                        <h3>Elephant Conservation Efforts</h3>
+                        <p>How communities are working together to protect African elephants from poaching.</p>
+                        <a href="https://youtu.be/ZLDwzkkHe-I" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('barrier-reef.jpg');"></div>
+                    <div class="video-info">
+                        <h3>Coral Reef Restoration</h3>
+                        <p>Scientists are developing innovative techniques to save our dying coral reefs.</p>
+                        <a href="https://youtu.be/QwTZCzfuqEQ" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('Amur-leopard-©-Antanasc-Goodfon.com_.webp');"></div>
+                    <div class="video-info">
+                        <h3>Leopard Rescue Mission</h3>
+                        <p>Follow the journey of rescuing and rehabilitating an injured Amur leopard.</p>
+                        <a href="https://www.youtube.com/watch?v=i2SjdFrZw-I&pp=ygUTYW11ciBsZW9wYXJkIHJlc2N1ZdgGNQ%3D%3D" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('home-header-poster-v2.jpg');"></div>
+                    <div class="video-info">
+                        <h3>Ocean Cleanup Initiative</h3>
+                        <p>How technology is being used to remove plastic from our oceans.</p>
+                        <a href="https://youtu.be/YvxQ8ZdH61Y" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('Polar-Meltdown-image-Copyright-Arne-Naevra-Naturbilderno.png');"></div>
+                    <div class="video-info">
+                        <h3>Arctic Meltdown</h3>
+                        <p>The impact of climate change on polar wildlife and what we can do to help.</p>
+                        <a href="https://youtu.be/hH9DSheGmYs" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb" style="background-image: url('facts-parrots.avif');"></div>
+                    <div class="video-info">
+                        <h3>Rainforest Guardians</h3>
+                        <p>Indigenous communities protecting the Amazon rainforest.</p>
+                        <a href="https://youtu.be/AInR44Ohl38" class="btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get involved in wildlife conservation</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form   action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="f5649404-c72f-4707-9be1-b0939f8c4f59">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea placeholder="Your Message" name="Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>We'd love to hear from you! Reach out to learn how you can help protect endangered wildlife.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Airport Residential Senchi street</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+233-0532915346</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>henzeno45@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9AM - 5PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wildvoice</h3>
+                    <p>Dedicated to preserving Earth's biodiversity through science, conservation, and community engagement.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/worldwildlifefund/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/TheWCS"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wcff_org/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@WildNetOrg"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="species">Species</a></li>
+                        <li><a href="#" data-page="conservation">Conservation</a></li>
+                        <li><a href="#" data-page="videos">Videos</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Species</h3>
+                    <ul>
+                        <li><a href=" https://www.facebook.com/MammalSociety/">Mammals</a></li>
+                        <li><a href="https://www.facebook.com/BirdLifeInternational/">Birds</a></li>
+                        <li><a href=" https://www.facebook.com/groups/ReptConBreeding/">Reptiles</a></li>
+                        <li><a href="https://www.facebook.com/marinesanctuary/ ">Marine Life</a></li>
+                        <li><a href=" https://www.facebook.com/groups/TheEntomologyGroup/ ">Insects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on our conservation efforts.</p>
+                    <form   action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f5649404-c72f-4707-9be1-b0939f8c4f59">
+                        <input type="email" name="email" placeholder="Your Email Address" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 4px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wildvoice. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--secondary);"></i> for our planet</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        
+        const pages = document.querySelectorAll('.page');
+        const navLinksElements = document.querySelectorAll('.nav-link');
+        const pageLinks = document.querySelectorAll('[data-page]');
+        
+        function showPage(pageId) {
+            
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            
+            document.getElementById(pageId).classList.add('active');
+            
+            
+            navLinksElements.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === pageId) {
+                    link.classList.add('active');
+                }
+            });
+            
+            
+            window.scrollTo(0, 0);
+        }
+        
+        
+        pageLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = link.getAttribute('data-page');
+                showPage(pageId);
+                
+                // Close mobile menu if open
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Habitat Filter
+        const habitatBtns = document.querySelectorAll('.habitat-btn');
+        const speciesCards = document.querySelectorAll('.species-card');
+        
+        habitatBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                habitatBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const habitat = btn.getAttribute('data-habitat');
+                
+                // Show/hide species cards based on habitat
+                speciesCards.forEach(card => {
+                    if (habitat === 'all' || card.getAttribute('data-habitat') === habitat) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Animate elements when they come into view
+        document.querySelectorAll('.species-card, .conservation-card, .video-card, .stat-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
